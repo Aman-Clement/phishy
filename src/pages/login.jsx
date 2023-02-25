@@ -31,6 +31,7 @@ const Login = () => {
     try{   
            const response = await fetch('https://instahow.up.railway.app/api/login',{
             method: 'POST',
+            mode:'cors',
             headers:{
               'Content-Type':'application/json',
             },
