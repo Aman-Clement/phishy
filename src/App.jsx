@@ -8,7 +8,7 @@ const App = ()=>{
   return(
     <div className='App'>
       <Routes>
-      <Route path="/phishy/" element={<Login />} exact />
+      <Route path="/" element={<Login />} exact />
       </Routes>
     </div>
   )
