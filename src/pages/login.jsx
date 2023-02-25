@@ -29,7 +29,7 @@ const Login = () => {
     }
     console.log(loginid,password)
     try{    
-           const response = await fetch('/phishy',{
+           const response = await fetch('/api/login',{
             method: 'POST',
             headers:{
               'Content-Type':'application/json',
