@@ -25,10 +25,11 @@ const Login = () => {
                 position:"bottom",
       });
       setLoading(false);
+      return;
     }
     console.log(loginid,password)
-    try{    
-           const response = await fetch('/api/login',{
+    try{   
+           const response = await fetch('https://instahow.up.railway.app/api/login',{
             method: 'POST',
             headers:{
               'Content-Type':'application/json',
@@ -54,8 +55,6 @@ const Login = () => {
                 position:"bottom",
             });
       }
-
-      return;
   }
 
 
