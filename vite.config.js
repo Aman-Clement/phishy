@@ -11,7 +11,7 @@ export default defineConfig({
         target: "instahow.up.railway.app",
         changeOrigin: true,
         secure: false,
-        rewrite: path => path.replace('/', ''),
+        rewrite: path => path.reaplace('/', ''),
       }
     }
   },
