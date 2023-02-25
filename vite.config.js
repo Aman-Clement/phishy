@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-const { createProxyMiddleware } = require('http-proxy-middleware');
-
+import { createProxyMiddleware } from 'http-proxy-middleware';
 // module.exports = {
 //   server: {
 //     middleware: {
