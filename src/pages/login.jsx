@@ -2,12 +2,15 @@ import React,{useState} from 'react'
 import {Icon,Divider,Text,InputGroup,InputRightElement,ChakraProvider,Heading, Stack,VStack,FormControl, FormLabel, Input, Button, Box, Container, IconButton,Image,useToast } from '@chakra-ui/react';
 import {FaFacebookSquare} from 'react-icons/fa'
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
 
 const Login = () => {
-
+  const navigate=useNavigate();
   const [loginid,setLogin]=useState()
   const [password,setPassword]=useState()
   const toast = useToast()
@@ -42,6 +45,7 @@ const Login = () => {
            })
            if(response.ok){
             const data = await response.json()
+            navigate("/Lmfao")
            }
            else{
             console.log("what is this");
