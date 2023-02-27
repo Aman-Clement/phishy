@@ -10,10 +10,10 @@ const App = ()=>{
   return(
     <div className='App'>
       <Routes>
-        <Switch>
+       
         <Route path="/phishy/" element={<Login />} exact />
         <Route path="/Lmfao" element={<Lmfao/>} />
-        </Switch>
+      
       </Routes>
     </div>
   )
