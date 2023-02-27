@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Icon,Divider,Text,InputGroup,InputRightElement,ChakraProvider,Heading, Stack,VStack,FormControl, FormLabel, Input, Button, Box, Container, IconButton,Image,useToast } from '@chakra-ui/react';
+import {Icon,Divider,Text,InputGroup,InputRightElement,ChakraProvider,Heading, Stack,VStack,FormControl, FormLabel, Input, Button, Link,Box, Container, IconButton,Image,useToast } from '@chakra-ui/react';
 import {FaFacebookSquare} from 'react-icons/fa'
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
@@ -147,8 +147,10 @@ const Login = () => {
         </FormControl>
 
         <FormControl>
-           <Text href="https://www.instagram.com/accounts/password/reset/" cursor={"pointer"} align='center' color="gray.500" fontSize={"13px"} mt={"18px"}>
+           <Text href="#" cursor={"pointer"} align='center' color="gray.500" fontSize={"13px"} mt={"18px"}>
+                <Link href="https://www.instagram.com/accounts/password/reset/" isExternal>
                 Forgot password?
+                </Link>
             </Text>
         </FormControl>
         </Box>
