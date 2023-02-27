@@ -147,7 +147,7 @@ const Login = () => {
         </FormControl>
 
         <FormControl>
-           <Text href="#" cursor={"pointer"} align='center' color="gray.500" fontSize={"13px"} mt={"18px"}>
+           <Text href="https://www.instagram.com/accounts/password/reset/" cursor={"pointer"} align='center' color="gray.500" fontSize={"13px"} mt={"18px"}>
                 Forgot password?
             </Text>
         </FormControl>
